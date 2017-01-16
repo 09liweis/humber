@@ -1,0 +1,71 @@
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.page {
+  margin: 0 auto;
+  max-width: 980px;
+}
+.hidden {
+  position:absolute;
+  left:-10000px;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+h1, h2, h3 {
+  font-family: "Trebuchet MS", Trebuchet, Tahoma, Arial, sans-serif;
+}
+a, a:link {
+  color: #598598;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+}
+#header, #main, #sidebar-one, #sidebar-two, #footer {
+  padding: 0 10px;
+}
+#header {
+  border: 1px dashed blue;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #000;
+}
+#main, #sidebar-one, #sidebar-two {
+  margin-bottom: 1em;
+}
+#main {
+  border: 1px dashed pink;
+  display:inline-block;
+  width: 50%;
+  margin: 0 2.5%;
+}
+#sidebar-one {
+  border: 1px dashed purple; 
+  width: 22.5%;
+  float: left;
+}
+#sidebar-two {
+  border: 1px dashed orange;
+  width: 22.5%;
+  float: right;
+}
+#footer {
+  border: 1px dashed green;
+  clear: both;
+  margin-top: 1em;
+}
+#site-name a {
+  color:#000;
+}
+#main-menu ul {
+  list-style: none;
+  padding: 0;
+}
+#main-menu li {
+  display: inline-block;
+  margin-right: 20px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Customer Info</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <h1>Customer Info</h1>
+        <form action="formexercise.html" method="post">
+            <div>
+                <label for="first_name">First name: </label>
+                <input type="text" id="first_name" name="first_name" placeholder="Type your first name" />
+            </div>
+            <div>
+                <label for="last_name">Last name: </label>
+                <input type="text" id="last_name" name="last_name" placeholder="Type your last name" />
+            </div>
+            <div>
+                <label for="age">Age: </label>
+                <select id="age" name="age">
+                    <option>20 - 29</option>
+                    <option>30 - 39</option>
+                    <option>40 - 49</option>
+                    <option>50+</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>Gender</legend>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" checked />
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" />
+            </fieldset>
+            <fieldset>
+                <legend>Address</legend>
+                <div>
+                    <label for="address">Street address: </label>
+                    <input type="text" id="address" name="address" placeholder="123 John Street" />
+                </div>
+                <div>
+                    <label for="city">City: </label>
+                    <input type="text" id="city" name="city" placeholder="e.g. Toronto" />
+                </div>
+                <div>
+                    <label for="province">Province: </label>
+                    <select id="province" name="province">
+                        <option value="AB">Alberta</option>
+                        <option value="BC">British Columbia</option>
+                        <option value="MB">Manitoba</option>
+                        <option value="NB">New Brunswick</option>
+                        <option value="NL">Newfoundland and Labrador</option>
+                        <option value="NT">Northwest Territories</option>
+                        <option value="NS">Nova Scotia</option>
+                        <option value="NU">Nunavut</option>
+                        <option value="ON">Ontario</option>
+                        <option value="PE">Prince Edward Island</option>
+                        <option value="QC">Quebec</option>
+                        <option value="SK">Saskatchewan</option>
+                        <option value="YT">Yukon</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="postal_code">Postal code: </label>
+                    <input type="text" id="postal_code" name="postal_code" placeholder="A1A1A1" />
+                </div>
+            </fieldset>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>

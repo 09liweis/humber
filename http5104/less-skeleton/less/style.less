@@ -1,0 +1,39 @@
+@lightgrey: #ededed;
+
+.heading(@color: red, @weight: normal) {
+    font-size: 1.5em;
+    font-style: italic;
+    color: @color;
+    font-weight: @weight;
+}
+
+.transition(@params) {
+    -webkit-transition: @params;
+    -moz-transition: @params;
+    transition: @params;
+}
+
+h1 {
+    .heading(green,bold);
+}
+
+header {
+    background-color: @lightgrey
+}
+
+a {
+    color: red;
+    .transition(all 2s);
+    &:hover {
+        color: green;
+        font-weight: bold;
+    }
+}
+
+#main-menu {
+    position: relative;
+    li a {
+        color: black;
+        font-weight: bold;
+    }
+}

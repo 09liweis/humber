@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+        <title>Sam Li</title>
+        <!-- for icon font usage -->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/experiment.css">
+    </head>
+    <body>
+        <div id="loading">
+            <span id="loading-msg">Loading</span>
+        </div>
+        <header id="header" class="blue-bg block">
+            <div class="wrapper">
+                <div id="logo">
+                    <h2>Sam Li</h2>
+                </div>
+                <nav id="navigation">
+                    <h2 class="hidden">Navigation</h2>
+                    <ul class="navs">
+                        <li class="nav"><a class="nav-link" href="#about"></a></li>
+                        <li class="nav"><a class="nav-link" href="#skills">skills</a></li>
+                        <li class="nav"><a class="nav-link" href="#experiences">experiences</a></li>
+                        <li class="nav"><a class="nav-link" href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+                <section id="about">
+                    <h1>this is experimental page</h1>
+                    <div class="line"></div>
+                </section>
+            </div>
+        </header>
+        <main id="main">
+            <section id="skills" class="white-bg block">
+                <div class="wrapper">
+                    <div class="col width-20">
+                        <h2>skills</h2>
+                        <div class="line"></div>
+                    </div>
+                    <div class="col width-80">
+                        <div class="col width-40 skill-wrapper">
+                            <div class="col width-20">
+                                <p><i class="devicon-html5-plain-wordmark"></i></p>
+                            </div>
+                            <div class="col width-80">
+                                <div class="skill">
+                                    <div class="skill-bar" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="col width-40 skill-wrapper">
+                            <div class="col width-20">
+                                <p><i class="devicon-css3-plain-wordmark"></i></p>
+                            </div>
+                            <div class="col width-80">
+                                <div class="skill">
+                                    <div class="skill-bar" data-width="67"></div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="col width-40 skill-wrapper">
+                            <div class="col width-20">
+                                <p><i class="devicon-javascript-plain"></i></p>
+                            </div>
+                            <div class="col width-80">
+                                <div class="skill">
+                                    <div class="skill-bar" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="col width-40 skill-wrapper">
+                            <div class="col width-20">
+                                <p><i class="devicon-mysql-plain-wordmark"></i></p>
+                            </div>
+                            <div class="col width-80">
+                                <div class="skill">
+                                    <div class="skill-bar" data-width="60"></div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="col width-40 skill-wrapper">
+                            <div class="col width-20">
+                                <p><i class="devicon-github-plain-wordmark"></i></p>
+                            </div>
+                            <div class="col width-80">
+                                <div class="skill">
+                                    <div class="skill-bar" data-width="60"></div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </section>
+            <section id="experiences" class="blue-bg block">
+                <div class="wrapper">
+                    <div class="col width-20">
+                        <h2>experiences</h2>
+                        <div class="line"></div>
+                    </div>
+                    <div class="col width-80">
+                        <a class="col width-40 experience" href="http://bytemediagroup.com/" target="_blank" title="Byte Media Group">
+                            Byte Media Group
+                        </a>
+                        <a class="col width-40 experience" href="http://webcanada.com/" target="_blank" title="WebCanada Inc.">
+                            WebCanada Inc.
+                        </a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </section>
+            
+            <section id="contact" class="white-bg block">
+                <div class="wrapper">
+                    <div class="col width-20">
+                        <h2>Let's Talk</h2>
+                        <div class="line"></div>
+                    </div>
+                    <div class="col width-80">
+                        <form id="form">
+                            <div class="form-control">
+                                <label for="name">Name: </label>
+                                <input class="input-form" type="text" id="name" name="name" placeholder="Name" />
+                            </div>
+                            <div class="form-control">
+                                <label for="email">Email: </label>
+                                <input class="input-form" type="text" id="email" name="email" placeholder="Email" />
+                            </div>
+                            <div class="form-control">
+                                <label for="message">Message: </label>
+                                <textarea class="input-form" id="message" name="message" placeholder="How can I help you?"></textarea>
+                            </div>
+                            <div class="form-control">
+                                <input class="input-form" id="submit" type="submit" value="Send" />
+                            </div>
+                        </form>
+                        <div id="form-msg">
+                            <div id="form-msg-wrapper">
+                                <p>Email has been sent!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer" class="blue-bg block">
+            <div class="wrapper">
+                &copy; 2016 Sam Li
+            </div>
+        </footer>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

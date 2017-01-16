@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<timetable>
+    <course>
+        <date>Monday</date>
+        <name>XML and Web Services</name>
+        <location>F311</location>
+        <code>http5203</code>
+        <start>8:00am</start>
+        <end>11:35am</end>
+        <instructor>Joanna Kommala</instructor>
+    </course>
+    <course>
+        <date>Tuesday</date>
+        <name>Web Information Architecture</name>
+        <location>F310</location>
+        <code>http5206</code>
+        <start>8:55am</start>
+        <end>11:35am</end>
+        <instructor>Bernard L. Monette</instructor>
+    </course>
+    <course>
+        <date>Wednesday</date>
+        <name>Career Connections</name>
+        <location>F313</location>
+        <code>http5205</code>
+        <start>10:45am</start>
+        <end>12:30pm</end>
+        <instructor>Sean W. Doyle</instructor>
+    </course>
+    <course>
+        <date>Thursday</date>
+        <name>Mobile Development</name>
+        <location>J132</location>
+        <code>http5204</code>
+        <start>8:00am</start>
+        <end>10:40am</end>
+        <instructor>Lee Situ</instructor>
+    </course>
+    <course>
+        <date>Thursday</date>
+        <name>Web Application Development 2</name>
+        <location>F308</location>
+        <code>http5202</code>
+        <start>1:30pm</start>
+        <end>5:05pm</end>
+        <instructor>Nithya R. Thayananthan</instructor>
+    </course>
+    <course>
+        <date>Friday</date>
+        <name>Security and Quality Assurance</name>
+        <location>F311</location>
+        <code>http5201</code>
+        <start>11:40am</start>
+        <end>3:15pm</end>
+        <instructor>Sean W. Doyle</instructor>
+    </course>
+</timetable>

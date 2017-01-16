@@ -1,0 +1,303 @@
+.page-wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+
+}
+.hidden {
+  position: absolute;
+  left: -10000px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+header {
+  background-color: #2abbb3;
+  padding: 2.2em;
+}
+a, a:link {
+  color: #2abbb3;
+  text-decoration: none;
+}
+a:visited {
+  color: #2b8e89;
+}
+a:hover {
+  text-decoration: underline;
+}
+#slogan {
+  position: relative;
+  left: 10px;
+  color: #3c3f3f;
+  font-size: 0.75em;
+  margin: 0;
+}
+#logo-and-slogan {
+  padding-left: 1.25em;
+  padding-top: 1.875em;
+  display:inline-block;
+  width: 25%;
+}
+#search-form-wrapper {
+  position: absolute;
+  top: -15px;
+  right: 0;
+}
+.menu-toggle {
+  display: none;
+}
+#main-menu {
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  max-width: 75%;
+  z-index: 1;
+}
+#main-menu ul {
+  padding: 0;
+  list-style: none;  
+  border-top:1px dotted #636363;
+  border-bottom:1px dotted #636363;
+}
+#main-menu li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  padding: 15px 12px;
+}
+#main-menu li:first-child {
+  padding-left: 28px;
+}
+#main-menu li:last-child {
+  padding-right: 28px;
+}
+#main-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+#main-menu a:hover {
+  color: #000;
+}
+#search-bar {
+  border-radius: 10px;
+  padding: 10px 5px;
+  background-color: #d1dddd;
+  border: 1px solid #3ca59f;
+  width: 208px;
+  font-style: italic;
+  font-size: 0.875em;
+}
+#search-btn {
+  border-radius: 10px;
+  padding: 10px 5px;
+  background-color: #87f2ec;
+  border: 1px solid #31b3ac;
+  text-transform: uppercase;
+  color: #114542;
+  font: bold 0.875em/1.1 "Century Gothic", Futura, AppleGothic, sans-serif;
+}
+#banner {
+  position: relative;
+  color: #fff;
+  background-image:
+    linear-gradient(
+	  to right,
+	  #117186, #05425a
+	);
+  margin-bottom: 25px;
+}
+.banner-img {
+  text-align: center;
+}
+.banner-content {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+#banner .subtitle {
+  font-size: 1.5em; /* equiv. to 24px */
+}
+.banner-title {
+  font: normal 3.75em  "Times New Roman", Times, Georgia, serif;
+  margin: 0 0 70px 0;
+  line-height: 1.1;
+  white-space:pre-line;
+}
+.banner-content .page-wrapper {
+  padding: 4em 2.1875em;
+}
+.button {
+  font-weight: bold;
+  font-size: 1.125em; /* equiv. to 18px if base font is 16px */
+  text-transform: uppercase;
+  padding: 15px 55px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.ghost {
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5),
+                      inset 0 0 10px rgba(0,0,0,0.5);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5),
+                   inset 0 0 10px rgba(0,0,0,0.5);  /* Firefox 3.5 - 3.6 */
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5),
+              inset 0 0 10px rgba(0,0,0,0.5);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  text-shadow: 0 2px 2px rgba(0,0,0,1);
+}
+a.ghost.button {
+  color: #62fff6;  
+}
+a.ghost.button:hover {
+  color: #fff;
+}
+.columns {
+  clear: both;
+  padding: 20px 0;
+}
+.col-33 {
+  width: 33%;
+  margin: 0 0.25%;
+  float: left;
+  padding: 0;
+}
+.col-33:first-child {
+  margin-left: 0;
+}
+.col-33:last-child {
+  margin-right: 0;
+}
+.col-33 h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.col-33 p {
+  font-size: 1.25em;
+}
+.imagetitle a {
+  color: #475a5d;
+}
+.imagetitle a:hover {
+  text-decoration: none;
+  color: #2abbb3;
+}
+p.date-elapsed {
+  font-size: 0.875em;
+}
+.col-50 {
+  width: 48%;
+  float: left;
+}
+.col-50:first-child {
+  clear: left;
+  margin-right: 4%;
+}
+.col-50 h2 {
+  text-transform: uppercase;
+  border-bottom: 3px solid #000;
+  font-size: 1.875em;
+  line-height:0.6; /* make the underline touch the text */
+}
+.col-50 h3 {
+  font-family: "Arial Narrow Bold", Haettenschweiler, sans-serif;
+  margin: 25px 0 10px 0;
+}
+.col-50 p {
+  margin: 0;
+}
+
+@media all and (max-width: 768px) {
+  body {
+    font-size: 0.9em;
+  }
+  #header {
+    padding: 10px;
+  }
+  #search-form-wrapper {
+    top: 0;
+  }
+  #logo-and-slogan {
+    padding: 0;
+  }
+  #slogan {
+    display: none;
+  }
+  #logo {
+    width: 75px;
+  }
+  #main-menu {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    top: 0;
+  }
+  #banner {
+    font-size: 0.7em;
+  }
+  .banner-title {
+    margin-bottom: 2.5%;
+  }
+  .button {
+    padding: 1% 4%;
+  }
+  .banner-content page-wrapper {
+    padding-top: 4%;
+  }
+  #main .page-wrapper {
+    padding: 0 5px;
+  }
+  .col-33 {
+    width: 40%;
+    margin-left: 2%;
+    margin-bottom: 2em;
+    margin-right: 0;
+  }
+  .col-33:nth-child(2n+1) {
+    clear: left;
+    margin-left: 0;
+  }
+  .col-33:nth-child(2n) {
+    float: right;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .col-33,
+  .col-50 {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  
+  .banner-content {
+    position: relative;
+  }
+  
+  .banner-img {
+    display: none;
+  }
+  
+  #main-menu {
+    position: absolute;
+    left: -10000px;
+  }
+  
+  #main-menu.show-small {
+    position: relative;
+    left: 0;
+  }
+  
+}

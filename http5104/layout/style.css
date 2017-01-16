@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.page {
+  margin: 0 auto;
+  max-width: 980px;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+h1, h2, h3 {
+  font-family: "Trebuchet MS", Trebuchet, Tahoma, Arial, sans-serif;
+}
+a, a:link {
+  color: #598598;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+}
+img {
+  max-width: 100% !important;
+  height: auto;
+}
+#header, #main, #sidebar-one, #sidebar-two, #footer {
+  padding: 0 10px;
+}
+#header {
+  border: 1px dashed blue;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #000;
+}
+#main, #sidebar-one, #sidebar-two {
+  margin-bottom: 1em;
+}
+#main {
+  border: 1px dashed pink;
+  display:inline-block;
+  width: 50%;
+  margin: 0 2.5%;
+}
+h1[class~="page-title"] {
+  color: green;
+}
+h1[class|="heading"] {
+  color: blue;
+}
+#sidebar-one {
+  border: 1px dashed purple; 
+  width: 22.5%;
+  float: left;
+}
+#sidebar-two {
+  border: 1px dashed orange;
+  width: 22.5%;
+  float: right;
+}
+a[href$=".pdf"] {
+  font-size: 0,8em;
+  padding-left: 35px;
+  padding-bottom: 15px;
+  background-image: url(./images/pdf.png);
+  background-repeat: no-repeat;
+}
+aside[id$="sidebar"] {
+  font-size: 2rem;
+}
+#footer {
+  border: 1px dashed green;
+  clear: both;
+  margin-top: 1em;
+}
+#main-menu ul {
+  /*background-color: gray;*/
+  list-style: none;
+  padding: 0;
+}
+#main-menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.menu-toggle {
+  display: none;
+}
+h1 ~ p {
+  font-style: italic;
+}
+#main p:first-of-type:first-letter {
+  font-size: 3em;
+  font-style: normal;
+  float: left;
+}
+@media all and (max-width:768px) {
+  #sidebar-two {
+    display: block;
+	width: 100%;
+  }
+  #sidebar-one {
+    width: 32.5%;
+  }
+  #main {
+    margin-bottom: 1em;
+	margin-right: 0;
+	width: 65%;
+  }
+}
+@media all and (max-width:480px) {
+  #sidebar-one {
+    display: block;
+	width: 100%;
+  }
+  #main {
+    width: 100%;
+	margin-left: 0;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  #main-menu {
+    position: absolute;
+	left:-10000px;
+  }
+  #main-menu.show-small {
+    position:relative;
+    left: 0;
+  }
+  #main-menu li {
+    display: block;
+  }
+}

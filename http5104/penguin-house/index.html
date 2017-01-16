@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+	<title>Penguin House</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+	  <div class="page-wrapper">
+	    <div id="logo-and-slogan">
+		  <h1 class="hidden">Penguin House</h1>
+	      <a href="index.html"><img src="images/logo.png" id="logo" alt="Penguin House logo" /></a>
+	      <p id="slogan">A fun aquarium full of penguins</p>
+		</div>
+		<div id="search-form-wrapper">
+		  <form id="search-form" action="#" method="get">
+		    <label for="search-bar" class="hidden">Search:</label>
+			<input type="text" id="search-bar" name="squery" placeholder="Enter your search terms..." />
+			<button type="submit" id="search-btn" name="searchsubmit">Search</button>
+		  </form>
+		</div>
+		<div class="menu-toggle" onclick="toggleMenu()">Menu</div>
+		<nav id="main-menu">
+		  <h2 class="hidden">Main menu</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Penguins</a></li>
+            <li><a href="#">Visit</a></li>
+            <li><a href="#">Buy Tickets</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </nav>
+	  </div> <!-- end page wrapper -->
+	</header>
+	<section id="banner">
+	  <div class="banner-content">
+	    <div class="page-wrapper">
+	      <span class="subtitle">Penguin House</span>
+		  <h2 class="banner-title">Come see what
+		  all the fuss is about</h2>
+		  <a href="#" class="ghost button">Visit us</a>
+		</div>
+	  </div>
+	  <div class="banner-img">
+	    <img src="images/swimming-penguin.jpg" alt="Swimming penguin" />
+	  </div>
+	</section>
+	<div class="page-wrapper">
+	 <main id="main">
+	  <div class="columns">
+	    <div class="col-33"> <!-- join penguin house box -->
+	      <img src="images/penguin-family.jpg" alt="Image of penguin family" />
+		  <h2 class="imagetitle"><a href="#">Join the Penguin House Family</a></h2>
+	    </div>
+	    <div class="col-33"> <!-- shop at penguin house box -->
+	      <img src="images/penguin-shop.jpg" alt="Image of PH shop" />
+		  <h2 class="imagetitle"><a href="#">Shop at Penguin House</a></h2>
+	    </div>
+	    <div class="col-33"> <!-- twitter box -->
+	      <h2>On Twitter</h2>
+		  <p>Our doors are finally open. We've got <a href="#">#penguins</a> galore!</p>
+		  <p class="date-elapsed">1 day ago</p>
+	    </div>
+	  </div> <!-- end of columns -->
+	  <div class="columns">
+	    <section class="col-50">
+	      <h2>News</h2>
+		  <article class="article-list">
+		    <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
+			<p class="date-elapsed">09.25.2015</p>
+		  </article>
+		  <article class="article-list">
+		    <h3><a href="#">Ut enim ad minim veniam, quis nostrud exercitation</a></h3>
+			<p class="date-elapsed">09.14.2015</p>
+		  </article>
+	    </section>
+	    <section class="col-50">
+	      <h2>Blog</h2>
+		  <article class="article-list">
+		    <h3><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</a></h3>
+			<p class="date-elapsed">Today</p>
+		  </article>
+		  <article class="article-list">
+		    <h3><a href="#">Excepteur sint occaecat cupidatat non proident</a></h3>
+			<p class="date-elapsed">September 24, 2015</p>
+		  </article>
+	    </section>
+	  </div>
+	 </main>
+	</div> <!-- end page wrapper for main -->
+	<script src="script.js"></script>
+  </body>
+</html>

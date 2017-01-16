@@ -1,0 +1,182 @@
+@import "//fonts.googleapis.com/css?family=Montserrat|Open+Sans";
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Open Sans", Arial;
+    color: #555;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #eeeeee;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.clear {
+    clear: both;
+}
+
+.page-wrapper {
+    
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: auto;
+}
+
+h1 {
+    font-family: "Montserrat", Arial;
+    font-size: 2.25rem;
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+#header {
+    text-align: center;
+    background: #ffffff;
+}
+
+#logo-img {
+    width: 100px;
+    height: 100px;
+}
+
+#nav .links {
+    margin-bottom: 20px;
+}
+
+#nav .link {
+    display: inline-block;
+    padding: 20px;
+    transition: background 0.5s;
+}
+
+#nav .link:hover {
+    background: #eeeeee;
+}
+
+#nav .link a {
+    color: #444444;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#sidebar {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    padding: 15px;
+}
+
+.block {
+    background: #ffffff;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.widget-links {
+    list-style: none;
+    padding: 0;
+}
+
+.widget-links li:before {
+    content: "•";
+    color: #49b4ff;
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+.widget-links a {
+    color: #444;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.widget-links a:hover {
+    text-decoration: underline;
+    color: #c74c3c;
+    margin-left: 20px;
+}
+
+#main-content {
+    float: left;
+    width: 65%;
+}
+
+figure {
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+}
+
+.article-info {
+    list-style: none;
+}
+
+.article-info .info {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-form {
+    background: #eeeeee;
+    border: none;
+    padding: 6px 12px;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.input-form:focus {
+    background: #ffffff;
+    border: 1px solid #88b2ff;
+}
+
+#submit {
+    background: #49b4ff;
+    padding: 12px 55px;
+    border: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background: #444444;
+}
+
+#footer {
+    padding: 50px 0;
+    background: #333333;
+    color: #ffffff;
+}

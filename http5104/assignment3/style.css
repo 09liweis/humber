@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Myriad Pro";
+}
+
+h1 {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+
+::selection {
+    background: #cccccc;
+}
+
+::-moz-selection {
+    background: #cccccc;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.hidden {
+    position: absolute;
+    left: -1000000000px;
+}
+
+.clear {
+    clear: both;
+}
+
+.block {
+    padding: 40px 0;
+}
+
+.col {
+    float: left;
+}
+
+.width-20 {
+    width: 20%
+}
+
+.width-30 {
+    width: 30%;
+}
+
+.width-40 {
+    width: 40%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+img {
+    width: 100%;
+}
+
+.blue-bg {
+    background: #227daa;
+    color: #ffffff;
+}
+
+.white-bg {
+    color: #227daa;
+}
+
+.line {
+    margin: 5px 0 20px 0;
+    width: 50px;
+    height: 5px;
+}
+
+.blue-bg .line {
+    background: #ffffff;
+}
+
+.white-bg .line {
+    background: #227daa;
+}
+
+#header,
+#work,
+#education,
+#contact,
+#footer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navs {
+    float: right;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 10px;
+    position: relative;
+}
+
+.nav-link:before {
+    transition: all .3s ease-in-out;
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.nav-link:hover:before{
+    width: 100%;
+}
+
+.work {
+    margin-right: 5%;
+    margin-bottom: 40px;
+    width: 47.5%;
+}
+
+.work:nth-child(2n) {
+    margin-right: 0;
+}
+
+.school:first-child {
+    margin-bottom: 30px;
+}
+
+.school .year{
+    color: #aac7d9;
+    font-size: 1rem;
+}
+
+.school .field-study {
+    text-transform: capitalize;
+}
+
+.school .institution {
+    color: #aac7d9;
+    font-size: 1.25rem;
+}
+
+.form-control label {
+    display: none;
+}
+
+.input-form {
+    background: #227daa;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+textarea {
+    height: 100px;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #ffffff;
+    font-size: 1rem;
+    font-style: italic;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #ffffff;
+    font-size: 1rem;
+    font-style: italic;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #ffffff;
+    font-size: 1rem;
+    font-style: italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #ffffff;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#submit {
+    font-style: normal;
+    width: 100px;
+}
+
+@media all and (max-width:768px) {
+    .work {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .width-20,
+    .width-80 {
+        width: 100%;
+    }
+    
+    .navs {
+        float: none;
+        text-align: center;
+    }
+    
+    .nav {
+        display: block;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,13 @@
+<!DOCTYPE people[
+	<!ELEMENT people (person+) >
+	<!ELEMENT person (name, bio?) >
+	<!ELEMENT name (firstname, lastname) >
+	<!ATTLIST name 
+		salutation (Mr | Mrs | Ms) "Mr"
+		id ID #REQUIRED >
+	<!ELEMENT firstname (#PCDATA) >
+	<!ELEMENT lastname (#PCDATA) >
+	<!ELEMENT bio (#PCDATA) >
+	<!ELEMENT emphasis (#PCDATA) >
+	<!ENTITY hello "Hello? Is it me you're looking for?" >
+] >

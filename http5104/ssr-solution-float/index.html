@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Seaside Resorts</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <header id="header">
+	  <div id="site-logo-and-name">
+	    <img src="images/logo.png" id="logo" alt="Seaside Resorts logo" />
+		<h1 id="site-name" class="hidden">Seaside Resorts</h1><!-- hide because the logo has the name -->
+	  </div>
+	  <ul id="account-links" class="menu">
+	    <li><a href="#">Login</a></li>
+	    <li><a href="#">Register</a></li>
+	  </ul>
+	  <nav id="main-navigation">
+	    <h2 class="hidden">Main navigation</h2>
+	    <ul class="menu">
+		  <li><a href="#">Home</a></li>
+		  <li><a href="#">Rooms &amp; Booking</a></li>
+		  <li><a href="#">Locations</a></li>
+		  <li><a href="#">Contact</a></li>
+		</ul>
+	  </nav>
+	</header>
+	<div id="banner">
+	  <img class="banner-img" src="images/sunset.jpg" alt="Image of seaside sunset" />
+	</div>
+	<main id="main"><!-- below is just one of several possible structures; see Notes.pdf -->
+	  <section id="booking-form">
+	    <h2>Book your stay now</h2>
+		<form method="post" action="index.html">
+		  <div>
+		    <label for="location">Location:</label>
+			<select id="location">
+			  <option value="">- Select -</option>
+			  <option value="Mexico">Mexico</option>
+			  <option value="Mexico">Aruba</option>
+			  <option value="Mexico">Thailand</option>
+			  <option value="Mexico">Indonesia</option>
+			</select>
+		  </div>
+		  <div>
+		    <label for="type">Type of room:</label>
+			<select id="type">
+			  <option value="">- Select -</option>
+			  <option value="queen">Double Queen</option>
+			  <option value="king">Double King</option>
+			</select>
+		  </div>
+		  <div>
+		    <label for="nights">Number of nights:</label>
+			<select id="nights">
+			  <option value="">- Select -</option>
+			  <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			</select>
+			<label for="adults">Number of adults:</label>
+			<select id="adults">
+			  <option value="">- Select -</option>
+			  <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			</select>
+		  </div>
+		  <div>
+		    <button type="submit">Check availability</button>
+		  </div>
+		</form>
+	  </section>
+	  <section id="call-to-action">
+	    <h2>Talk to us</h2>
+		<p><span class="phone">1-800-555-5555</span> or <a href="#">book online</a></p>
+	  </section>
+	  <section id="news-block" class="block">
+	    <h2 class="block-title">Latest News</h2>
+		<article>
+		  <h3><a href="#">New resort now open in Cancun</a></h3>
+		  <div class="date">1 day ago</div>
+		</article>
+		<article>
+		  <h3><a href="#">Online bookings now easier with our new booking system</a></h3>
+		  <div class="date">3 days ago</div>
+		</article>
+		<article>
+		  <h3><a href="#">Doctors find that sounds of the sea can help to relieve stress</a></h3>
+		  <div class="date">4 days ago</div>
+		</article>
+	  </section>
+	  <section id="features-block" class="block">
+	    <h2 class="block-title">Features</h2>
+		<div class="feature-page"><!-- I chose div instead of article because these are just page links but not necessarily articles -->
+		  <div class="feature-img">
+		    <img src="images/waves.png" alt="Icon of waves" />
+		  </div>
+		  <div class="feature-text">
+		    <h3>All our locations offer seaside views</h3>
+			<a href="#">View locations</a>
+		  </div>
+		</div>
+		<div class="feature-page">
+		  <div class="feature-img">
+		    <img src="images/discount.png" alt="-10%" />
+		  </div>
+		  <div class="feature-text">
+		    <h3>Members can collect points for discounts</h3>
+			<a href="#">Become a member today</a>
+		  </div>
+		</div>
+		<div class="feature-page">
+		  <div class="feature-img">
+		    <img src="images/clock.png" alt="Icon of clock" />
+		  </div>
+		  <div class="feature-text">
+		    <h3>24/7 online booking</h3>
+			<a href="#">Book your stay now</a>
+		  </div>
+		</div>
+	  </section>
+	</main>
+	<footer id="footer">
+	  <p id="copyright">© Copyright Seaside Resorts, 2016. All rights reserved.</p>
+	  <nav id="footer-navigation">
+	    <h2 class="hidden">Footer navigation</h2>
+	    <ul class="menu">
+		  <li><a href="#">Rooms</a>
+		    <ul>
+			  <li><a href="#">Types of rooms</a></li>
+			  <li><a href="#">Book room online</a></li>
+			  <li><a href="#">Designs</a></li>
+			</ul>
+		  </li>
+		  <li><a href="#">Locations</a>
+		    <ul>
+			  <li><a href="#">Mexico</a></li>
+			  <li><a href="#">Aruba</a></li>
+			  <li><a href="#">Thailand</a></li>
+			  <li><a href="#">Indonesia</a></li>
+			</ul>
+		  </li>
+		  <li><a href="#">Contact</a></li>
+		  <li><a href="#">About</a>
+		    <ul>
+			  <li><a href="#">Company history</a></li>
+			  <li><a href="#">Our guarantee</a></li>
+			</ul>
+		  </li>
+		</ul>
+	  </nav>
+	</footer>
+  </div>
+</body>
+</html>

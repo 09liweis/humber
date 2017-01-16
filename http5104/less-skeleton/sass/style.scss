@@ -1,0 +1,45 @@
+$lightgrey: #ededed;
+@mixin heading($color: red, $weight: normal) {
+    font-size: 1.5em;
+    font-style: italic;
+    color: $color;
+    font-weight: $weight;
+}
+
+@mixin mytransition($params) {
+    -webkit-transition: $params;
+    -moz-transition: $params;
+    transition: $params;
+}
+
+.mystyle {
+    font-weight: normal;
+    font-style: italic;
+}
+
+h1 {
+    @include heading(green, bold);
+}
+
+header {
+    @extend .mystyle;
+    background-color: $lightgrey;
+}
+
+a {
+    color: red;
+    @include mytransition(all 1s);
+    &:hover {
+        color: green;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+#main-menu {
+    position: relative;
+    li a {
+        color: black;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,22 @@
+/*LAB 6.2 LIBRARY OBJECTS*/
+table{
+	border: 5px ridge purple;
+	border-collapse: collapse;
+}
+
+caption{
+	color: purple;
+	font-weight: bold;
+}
+
+th {
+	background: pink;
+	padding: 3px 10px;
+}
+
+td{
+	background: ivory;
+	padding: 5px 15px;
+	border: 1px solid black;
+	font-family: monospace;
+}

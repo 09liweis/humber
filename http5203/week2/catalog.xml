@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE catalog[
+	<!ELEMENT catalog (product+) >
+	<!ELEMENT product (name, thumbnail?, images?, description, sizes?, colors) >
+	<!ATTLIST product 
+		sku CDATA #REQUIRED
+		category CDATA #IMPLIED 
+		isFeatured (no | yes) "no"
+		price CDATA #IMPLIED
+	>
+	<!ELEMENT name (#PCDATA) >
+	<!ELEMENT thumbnail (#PCDATA) >
+	<!ELEMENT images (image+) >
+	<!ELEMENT image (#PCDATA) >
+	<!ATTLIST image name CDATA #IMPLIED >
+	<!ELEMENT description (#PCDATA) >
+	<!ELEMENT sizes (size+) >
+	<!ELEMENT size (#PCDATA) >
+	<!ELEMENT colors (color+) >
+	<!ELEMENT color (#PCDATA) >
+] >
+<catalog>
+	<product sku="29043" category="audio" isFeatured="no" price="219.99">
+		<name>Sennheiser PC350 Gaming Stereo Headset</name>
+		<description>Gaming stereo headset, 10-26000Hz, 150ohm, 10-ft cord, noise-cancelling microphone.</description>
+		<colors>
+			<color>Black</color>
+			<color>Red</color>
+		</colors>
+	</product>
+	<product sku="57134" category="appliance" isFeatured="yes" price="459.99">
+		<name>Whirlpool Energy Saver Washer</name>
+		<thumbnail>wwasher-thumb.png</thumbnail>
+		<images>
+			<image name="Front View of washer">wwasher-front.jpg</image>
+			<image name="Washer controls">wwasher-controls.jpg</image>
+		</images>
+		<description>Front-loading washer from Whirlpool helps save money</description>
+		<sizes>
+			<size>3.9 cubic feet</size>
+		</sizes>
+		<colors>
+			<color>White</color>
+			<color>Silver</color>
+		</colors>
+	</product>
+</catalog>

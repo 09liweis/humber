@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE timetable[
+	<!ELEMENT timetable (course+) >
+	<!ELEMENT course (date, name, instructor) >
+	<!ATTLIST course 
+	    code CDATA #REQUIRED
+	    location CDATA #REQUIRED
+	    start CDATA #REQUIRED
+	    end CDATA #REQUIRED
+	>
+	<!ELEMENT date (#PCDATA) >
+	<!ELEMENT name (#PCDATA) >
+	<!ELEMENT instructor (firstname, lastname) >
+	<!ELEMENT firstname (#PCDATA) >
+	<!ELEMENT lastname (#PCDATA) >
+] >
+
+<timetable>
+    <course code="http5203" location="F311" start="8:00am" end="11:35am">
+        <date>Monday</date>
+        <name>XML and Web Services</name>
+        <instructor>
+            <firstname>Joanna</firstname>
+            <lastname>Kommala</lastname>
+        </instructor>
+    </course>
+    <course code="http5206" location="F310" start="8:55am" end="11:35am">
+        <date>Tuesday</date>
+        <name>Web Information Architecture</name>
+        <instructor>
+            <firstname>Bernard</firstname>
+            <lastname>Monette</lastname>
+        </instructor>
+    </course>
+    <course code="http5205" location="F313" start="10:45am" end="12:30pm">
+        <date>Wednesday</date>
+        <name>Career Connections</name>
+        <instructor>
+            <firstname>Sean</firstname>
+            <lastname>Doyle</lastname>
+        </instructor>
+    </course>
+    <course code="http5204" location="J132" start="8:00am" end="10:45am">
+        <date>Thursday</date>
+        <name>Mobile Development</name>
+        <instructor>
+            <firstname>Situ</firstname>
+            <lastname>Lee</lastname>
+        </instructor>
+    </course>
+    <course code="http5202" location="F308" start="1:30am" end="5:05pm">
+        <date>Thursday</date>
+        <name>Web Application Development 2</name>
+        <instructor>
+            <firstname>Nithya</firstname>
+            <lastname>Thayananthan</lastname>
+        </instructor>
+    </course>
+    <course code="http5201" location="F311" start="11:40am" end="3:35pm">
+        <date>Friday</date>
+        <name>Security and Quality Assurance</name>
+        <instructor>
+            <firstname>Sean</firstname>
+            <lastname>Doyle</lastname>
+        </instructor>
+    </course>
+</timetable>

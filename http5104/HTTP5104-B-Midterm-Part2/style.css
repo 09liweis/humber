@@ -1,0 +1,211 @@
+html {
+  box-sizing:border-box;
+}
+
+*, *:before, *:after {
+  box-sizing:inherit;
+}
+
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+p {
+    font-size: 0.97rem;
+}
+
+ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+h1, h2, h3 {
+    font-family: "Times New Roman";
+    font-weight: normal;
+}
+
+.link {
+    color: #fb145a;
+}
+
+.hidden {
+  position:absolute;
+  left:-10000px;
+}
+
+.clear {
+    clear: both;
+}
+
+.page-wrapper {
+    max-width: 980px;
+    margin: auto;
+}
+
+#header {
+    padding: 20px 10px;
+    border-bottom: 1px solid #000000;
+}
+
+#header #logo {
+    float: left;
+}
+
+#header #navigation {
+    float: right;
+    margin-top: 10px;
+}
+
+#navigation ul {
+    list-style: none;
+}
+
+#navigation ul li {
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+#navigation .link {
+    color: #000000;
+    text-decoration: none;
+}
+
+#navigation .link:hover {
+    color: #fb145a;
+}
+
+#main {
+    width: 65%;
+    float: left;
+    margin-right: 2%;
+    margin-top: 10px;
+    padding: 10px 10px 0 10px;
+}
+
+#main h1 {
+    color: #00a99d;
+}
+
+#main #books {
+    float: right;
+}
+
+#main .post-link:hover {
+    text-decoration: none;
+}
+
+.date {
+    margin-bottom: 40px;
+}
+
+#comments {
+    margin-top: 40px;
+}
+
+.comment {
+    background: #ffd4e1;
+    padding: 5px 10px 10px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fb145a;
+}
+
+.comment .post-date {
+    color: #fb145a;
+    margin-bottom: 10px;
+    font-family: "Times New Roman";
+}
+
+.comment p {
+    margin: 0;
+}
+
+.view-comments {
+    display: block;
+    margin-top: 20px;
+    font-family: "Times New Roman";
+}
+
+#aside {
+    margin-top: 20px;
+    width: 33%;
+    float: left;
+}
+
+#aside h2 {
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#extra-links h2 {
+    background: #00a99d;
+}
+
+#extra-links .extra-link {
+    padding: 10px 20px;
+    border-bottom: 1px solid #00a99d;
+}
+
+.extra-link .link {
+    color: #00a99d;
+    text-decoration: none;
+    font-family: "Times New Roman";
+}
+
+.extra-link .link:hover {
+    color: #fb145a;
+    text-decoration: underline;
+}
+
+#featured-post h2 {
+    background: #fb145a;
+}
+
+.featured-post-wrapper {
+    padding: 10px;
+}
+
+#featured-post h3 {
+    color: #00a99d;
+    font-size: 1rem;
+    margin: 0;
+}
+
+#featured-post #dries {
+    float: left;
+    width: 40%;
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+#featured-post #featured-post-detail {
+    float: left;
+    width: 55%;
+}
+
+#featured-post #featured-post-detail p {
+    font-size: 0.8rem;
+}
+
+.read-more {
+    margin-left: 10px;
+    font-family: "Times New Roman";
+}
+
+#footer {
+    margin-top: 30px;
+    padding: 10px;
+    border-top: 1px solid #000000;
+}
+
+#footer p {
+    margin: 0;
+}

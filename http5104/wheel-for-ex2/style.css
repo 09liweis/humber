@@ -1,0 +1,54 @@
+#circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: #cccccc;
+    transition: all 2s;
+}
+
+#circle:hover {
+    margin-left: 400px;
+    background: #000000;
+    width: 50px;
+    height: 50px;
+}
+
+#wheel {
+    transition: all 2s ease-in-out;
+}
+
+.anime {
+    transform: rotate(1080deg);
+}
+
+.scroll {
+    transform: scale(2);
+    animation: infiniteScroll 10s infinite;
+}
+
+@keyframes infiniteScroll {
+    0% {
+        transform: rotate(0);
+        margin-left: 0px;
+    }
+    
+    25% {
+        transform: rotate(180deg);
+        margin-left: 100px;
+    }
+    
+    50% {
+        transform: rotate(360deg);
+        margin-left: 200px;
+    }
+    
+    75% {
+        transform: rotate(720deg);
+        margin-left: 300px;
+    }
+    
+    100% {
+        transform: rotate(1080deg);
+        margin-left: 400px;
+    }
+}

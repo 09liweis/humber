@@ -1,0 +1,55 @@
+/* In the following CSS I did not use any vendor prefixes because it's easier to read
+ * without them, but in practice you should use them for the greatest browser support.
+ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+header, footer, aside, section, main {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px 15px;
+}
+.flex-container {
+  display: flex;
+  flex-flow: row wrap; /* shorthand for below two lines */
+  /*flex-direction: row;
+  flex-wrap: wrap;*/
+}
+.sidebar {
+  flex: 1 0 auto;
+}
+#main {
+  flex: 2 0 auto;
+}
+#first-sidebar {
+  order: -1;
+}
+.column {
+  flex: 1 0 auto;
+}
+@media all and (max-width:768px) { /* tablet */
+  #main {
+    flex: 0 100%;
+	order: -1;
+  }
+  .sidebar, .column {
+    flex: 1 0 auto;
+  }
+  .column:nth-child(2n) { 
+    /* In cases of layout, I would usually just target the id or class, but since this 
+	fits a pattern and I only need it for one case, I used :nth-child. It is okay 
+	to use this because I'm using :nth-child sparingly. If you find that you need to 
+	use A LOT of :nth-child selectors, just target the class or id because too many 
+	calculations (e.g. 2n+1) can be costly in terms of speed. */
+    order: 1;
+	flex: 0 100%;
+  }
+}
+@media all and (max-width:480px) { /* mobile */
+  .sidebar, .column {
+    flex: 0 100%;
+  }
+}

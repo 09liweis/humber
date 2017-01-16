@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><!-- you'll get a warning from the HTML validator still because of using Lorem ipsum text; just ignore it -->
+<head>
+  <meta charset="utf-8" />
+  <title>Week 4 - Exercise 1</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper"><!-- to bound page to 980px wide -->
+    <header id="header">
+	  <h2 id="site-name">My second layout</h2>
+	  <nav id="header-nav" class="main-navigation">
+	    <h3 class="hidden">Main navigation</h3><!-- because all section level elements need headings -->
+		<ul>
+		  <li><a href="/">Home</a></li>
+		  <li><a href="#">News</a></li>
+		  <li><a href="#">Blog</a></li>
+		  <li><a href="#">About</a></li>
+		  <li><a href="#">Contact</a></li>
+		</ul>
+	  </nav>
+	</header>
+	<main id="main">
+	  <header><!-- this header is optional but you can include it if you want to group header stuff -->
+		<h1>This is an article about nothing</h1>
+		<div class="date">Monday, September 26, 2016</div>
+		<div class="name">John Doe</div>
+		<div class="ref">Associated Press</div>
+	  </header>
+	  <img src="images/plane.jpg" class="left" alt="A plane in the clouds" />
+	  <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+	  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+	  ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+	  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+	  deserunt mollit anim id est laborum.</p>
+	  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam 
+	  rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+	  <aside id="author-info"><!-- also acceptable is <section> -->
+	    <h2>About the author</h2>
+		<p>John Doe blah blah blah.</p>
+	  </aside>
+	  <section id="comments">
+	    <h2>Comments closed</h2>
+		<p>No comments.</p>
+	  </section>
+	</main>
+	<aside id="sidebar">
+	  <div class="block">
+	    <h2 class="block-title">Recent news</h2>
+	    <article class="block-list-item"><!-- you may also choose to make a list of articles -->
+	      <img class="block-list-img" src="images/dog.jpg" alt="Dog running" />
+		  <h3><a href="#">Stray dogs are an increasing problem</a></h3><!-- <a> INSIDE of <h3> because <a> is an inline element; cannot have block element inside inline element -->
+	    </article>
+	    <article class="block-list-item">
+	      <img class="block-list-img" src="images/cat.jpg" alt="Cat sitting" />
+		  <h3><a href="#">Cats have taken over the Internet</a></h3>
+	    </article>
+	  </div>
+	</aside>
+	<footer id="footer">
+	  <nav id="footer-nav" class="main-navigation">
+	    <h2 class="hidden">Footer navigation</h3><!-- because all section level elements need headings -->
+		<ul>
+		  <li><a href="/">Home</a></li>
+		  <li><a href="#">News</a></li>
+		  <li><a href="#">Blog</a></li>
+		  <li><a href="#">About</a></li>
+		  <li><a href="#">Contact</a></li>
+		</ul>
+	  </nav>
+	</footer>
+  </div>
+</body>
+</html>

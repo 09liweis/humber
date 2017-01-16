@@ -1,0 +1,89 @@
+body {
+    font-size: 16px;
+}
+.clear {
+    clear:both;
+}
+
+.page-wrapper {
+    max-width: 1024px;
+    margin: auto;
+}
+
+#header {
+    border: 1px dashed #000000;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#header h2 {
+}
+
+#header #nav {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+#main {
+    float: left;
+    width: 65%;
+    padding: 10px;
+    border: 1px dashed #000000;
+}
+
+#main article .plane {
+    float: left;
+    margin-right: 10px;
+}
+
+#aside {
+    margin-left: 2%;
+    float: left;
+    width: 30%;
+    border: 1px dashed #000000;
+}
+
+#aside h3 {
+    color: #ffffff;
+    background: #2196f3;
+    padding: 10px;
+    margin: 0;
+}
+
+#aside article {
+    padding: 10px;
+}
+
+#aside article img {
+    width: 75px;
+    height: 75px;
+    float: left;
+}
+
+#aside article a {
+    font-size: 1.6em;
+    float: left;
+    width: 200px;
+    color: #000000;
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+#footer {
+    border: 1px dashed #000000;
+    margin-top: 20px;
+}

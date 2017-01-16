@@ -1,0 +1,267 @@
+/************************************************
+ * TABLE OF CONTENTS
+ * =================
+ * 1. DEFAULT OVERRIDES
+ * 2. USE ANYWHERE CLASSES
+ * 3. MENU STYLES
+ * 4. HEADER
+ * 5. FOOTER
+ * 6. BOOKING FORM
+ * 7. CALL TO ACTION
+ * 8. BLOCKS
+ * -8a. News list
+ * -8b. Features list
+ * 9. BANNER
+ ***********************************************/
+
+/* 1. DEFAULT OVERRIDES */
+html {
+  box-sizing:border-box;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#0e3c5f; /* dark blue */
+}
+*,*:before,*:after {
+  box-sizing:inherit;
+}
+body {
+  margin:0;
+}
+h2 {
+  text-transform:uppercase;
+  font-size:1.1em;
+  margin:0 0 1em 0; /* change default spacing */
+}
+a {
+  color:#539bf9; /* light blue */
+}
+img {
+  max-width:100%;
+  height:auto;
+}
+label {
+  font-weight:bold;
+  color:#539bf9;
+}
+option {
+  min-width:100px;
+}
+/* 2. USE ANYWHERE CLASSES */
+.hidden {
+  position:absolute;
+  left:-10000px;
+}
+.page-wrapper {
+  max-width:980px;
+  margin:0 auto;
+}
+/* 3. MENU STYLES */
+.menu {
+  text-transform:uppercase;
+  margin:0; /* remove default spacing from ul elements */
+}
+.menu > li {
+  display:inline-block;
+  list-style-type:none;
+  vertical-align:top;
+  margin-left:1em;
+}
+#account-links {
+  position:absolute;
+  top:0;
+  right:1em;
+}
+#account-links li {
+  background-color:#fcd9a4;
+  padding:0.4em 1em;
+  border-radius:0 0 0.25em 0.25em;
+  margin-left:0.25em;
+}
+#account-links a,
+#footer-navigation > ul > li > a {
+  color:#0e3c5f; /* dark blue */
+}
+#main-navigation {
+  float:right;
+  margin-bottom:0.3em;
+}
+#footer-navigation {
+  float:right;
+  width:49%; /* for 2% margin */
+  font-size:1.1em;
+}
+#footer-navigation a {
+  text-decoration:none;
+}
+#footer-navigation a:hover {
+  text-decoration:underline;
+}
+#footer-navigation ul {
+  list-style:none;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+#footer-navigation li {
+  margin:0;
+}
+#footer-navigation ul.menu > li {
+  display:block;
+  float:left;
+  width:30%;
+  padding-right:1em;
+  padding-bottom:1em;
+  font-weight:bold;
+}
+#footer-navigation ul ul {
+  padding-top:1em;
+}
+#footer-navigation li li {
+  text-transform:none;
+  font-weight:normal;
+  font-size:0.875em;
+}
+/* 4. HEADER */
+#header {
+  padding:0 1em;
+  position:relative;
+  border-bottom:1px solid #999;
+  float:left; /* to make sure floated nav is included in header height */
+  width:100%;
+  margin-bottom:0.2em;
+}
+#header a {
+  text-decoration:none;
+  font-weight:bold;
+  font-size:0.95em;
+}
+#logo {
+  max-width:275px;
+}
+/* 5. FOOTER */
+#footer {
+  border-top:1px solid #999;
+  clear:both;
+  padding:1em;
+  font-size:0.8em;
+}
+#footer p {
+  margin:0 0 1em 0;
+}
+#copyright {
+  float:left;
+  width:49%;
+  margin-right:2%;
+}
+/* 6. BOOKING FORM */
+#booking-form {
+  background-color:#fcd9a4;
+  border-radius:0.5em;
+  padding:1em;
+  float:left;
+  width:66.375%; /* for 1.25% margin */
+  margin-right:1.25%;
+  display:table-cell;
+}
+#booking-form button {
+  border:0; /* remove default border */
+  background-color:#0e3c5f;
+  color:#539bf9;
+  border-radius:0.3em;
+  padding:0.3em 1em;
+  text-transform:uppercase;
+  font-family:Arial,Helvetica,sans-serif; /* override default button font */
+  font-weight:bold;
+  font-size:1em;
+  float:right;
+  clear:left; /* make sure no other content can be to the left */
+  margin-top:1.2em;
+}
+form div {
+  margin-bottom:0.3em;
+}
+/* 7. CALL TO ACTION */
+#call-to-action {
+  border:3px solid #539bf9;
+  border-radius:0.5em;
+  float:right;
+  width:32.375%;
+  padding:1.2em;
+  text-align:center;
+  line-height:2;
+  height:198px;  
+}
+#call-to-action h2 {
+  font-weight:normal;
+  line-height:1.25;
+}
+#call-to-action .phone {
+  display:block;
+  font-size:1.2em;
+  font-weight:bold;
+}
+#call-to-action a {
+  font-weight:bold;
+}
+/* 8. BLOCKS */
+.block {
+  float:left;
+  width:49.75%; /* for 2.5% margin */
+  margin-right:0;
+  padding:1em;
+}
+.block:last-child {
+  margin-right:0;
+}
+.block-title {
+  color:#539bf9;
+  font-size:1.3em;
+}
+.block h3 {
+  font-weight:normal;
+  margin:0;
+}
+/* -8a. News list */
+.block article {
+  padding:1em 0;
+}
+.block article a {
+  color:#0e3c5f;
+  text-decoration:none;
+}
+.block article a:hover {
+  text-decoration:underline;
+}
+.block article .date {
+  color:#539bf9;
+  font-size:0.8em;
+}
+/* -8b. Features list */
+.feature-page {
+  padding:0 0 1em 0;
+  clear:both;
+}
+.feature-page > div {
+  margin-right:-4px;
+}
+.feature-img {
+  display:inline-block; /* you can easily vertically-center inline blocks in relation to each other */
+  width:20%;
+  padding-right:1em;
+  vertical-align:middle;
+}
+.feature-text {
+  display:inline-block;
+  width:80%;
+  vertical-align:middle;
+}
+.feature-text a {
+  font-size:0.8em;
+  text-decoration:none;
+}
+.feature-text a:hover {
+  text-decoration:underline;
+}
+/* 9. BANNER */
+#banner {
+  margin-bottom:1em;
+}

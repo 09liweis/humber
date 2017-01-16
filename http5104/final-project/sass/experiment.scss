@@ -1,0 +1,208 @@
+@mixin animation($anime) {
+    animation: $anime;
+    -webkit-animation: $anime;
+    -moz-animation: $anime;
+    -o-animation: $anime;
+    -ms-animation: $anime;
+}
+
+@mixin transition($trans) {
+    transition: $trans;
+    -webkit-transition: $trans;
+    -moz-transition: $trans;
+    -o-transition: $trans;
+    -ms-transition: $trans;
+}
+
+@mixin transform($transf) {
+    transform: $transf;
+    -moz-transform: $transf;
+    -webkit-transform: $transf;
+    -o-transform: $transf;
+    -ms-transform: $transf;
+}
+
+@mixin keyframes($animation)
+{
+    @-webkit-keyframes #{$animation} {
+        @content;
+    }
+    @-moz-keyframes #{$animation} {
+        @content;
+    }
+    @-o-keyframes #{$animation} {
+        @content;
+    }
+    @keyframes #{$animation} {
+        @content;
+    }
+}
+
+#logo {
+    float: left;
+    @include animation(spin 4s linear infinite);
+}
+
+.hide {
+    @include animation(disappear 1s linear forwards);
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #227daa;
+    color: #ffffff;
+    z-index: 100;
+    display: table;
+    @include transition(all 1s linear);
+}
+
+#loading-msg {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    @include transition(all 3s linear);
+    @include animation(loading 3s infinite);
+}
+
+.skill-wrapper {
+    margin-right: 10%;
+    margin-bottom: 20px;
+}
+
+[class^="devicon"] {
+    font-size: 2.75em;
+    display: inline-block;
+    @include transition(all 1s ease);
+}
+
+[class^="devicon"]:hover {
+    @include transform(rotate(360deg));
+}
+
+.skill {
+    width: 100%;
+    background: #deeef5;
+    height: 15px;
+    margin-top: 15px;
+}
+
+.skill-bar {
+    height: 100%;
+    width: 0%;
+    background: rgba(34,125,170,1);
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%,
+			      color-stop(.25, rgba(255, 255, 255, .2)),
+			      color-stop(.25, transparent),
+			      color-stop(.5, transparent),
+			      color-stop(.5, rgba(255, 255, 255, .2)),
+			      color-stop(.75, rgba(255, 255, 255, .2)),
+			      color-stop(.25, transparent),
+			      color-stop(.5, transparent),
+			      color-stop(.5, rgba(255, 255, 255, .2)),
+			      color-stop(.75, rgba(255, 255, 255, .2)),
+			      color-stop(.75, transparent), to(transparent)
+			   );
+    @include transition(width 4s);
+    @include animation(move 3s linear infinite);
+}
+
+.experience {
+    text-decoration: none;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    background: #ffffff;
+    padding: 10px;
+    color: #227daa;
+    margin-right: 10%;
+    @include transition(all 0.4s ease-out);
+}
+
+.experience:before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #deeef5;
+    @include transform(scaleX(0));
+    @include transition(transform 0.4s ease-out);
+}
+
+.experience:hover {
+    letter-spacing: 0.089em;
+}
+
+.experience:hover:before {
+    transform: scaleX(1);
+}
+
+#contact .width-80 {
+    height: 397px;
+}
+
+#form {
+    @include transition(all 1s ease);
+}
+
+.form-submit {
+    @include animation(submit 1s linear);
+}
+
+@include keyframes(submit) {
+    0% {
+        @include transform(translate(-10px));
+    }
+    10% {
+        @include transform(translate(-20px));
+    }
+    20% {
+        @include transform(translate(0px));
+    }
+    100% {
+        @include transform(translate(1000px));
+    }
+}
+
+@include keyframes(move) {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+@include keyframes(loading) {
+    0% {
+        letter-spacing: 0.13rem;
+    }
+    50% {
+        letter-spacing: 0.28rem;
+    }
+    100% {
+        letter-spacing: 0.13rem;
+    }
+}
+
+@include keyframes(disappear) {
+    0% {
+        @include transform(scale(1));
+        opacity: 1;
+    }
+    
+    100% {
+        @include transform(scale(0));
+        opacity: 0;
+    }
+}
+
+@include keyframes(spin) {
+    100% {
+        @include transform(rotate(360deg));
+    }
+}

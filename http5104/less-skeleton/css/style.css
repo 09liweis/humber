@@ -1,0 +1,30 @@
+.mystyle, header {
+  font-weight: normal;
+  font-style: italic; }
+
+h1 {
+  font-size: 1.5em;
+  font-style: italic;
+  color: green;
+  font-weight: bold; }
+
+header {
+  background-color: #ededed; }
+
+a {
+  color: red;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s; }
+  a:hover {
+    color: green;
+    font-weight: bold;
+    text-decoration: none; }
+
+#main-menu {
+  position: relative; }
+  #main-menu li a {
+    color: black;
+    font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */

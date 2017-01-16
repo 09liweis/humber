@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!DOCTYPE people SYSTEM "people.dtd">
+
+<!DOCTYPE people[
+	<!ELEMENT people (person+) >
+	<!ELEMENT person (name, bio?) >
+	<!ELEMENT name (firstname, lastname) >
+	<!ATTLIST name 
+		salutation (Mr | Mrs | Ms) "Mr"
+		id ID #REQUIRED >
+	<!ELEMENT firstname (#PCDATA) >
+	<!ELEMENT lastname (#PCDATA) >
+	<!ELEMENT bio (#PCDATA | emphasis) * >
+	<!ELEMENT emphasis (#PCDATA) >
+	<!ENTITY hello "Hello? Is it me you're looking for?" >
+] >
+
+<people>
+  <person>
+    <name salutation="Mr" id="person-1"><!--this is a comment-->
+		  <firstname>John</firstname>
+		  <lastname>Doe</lastname>
+		</name>
+		<bio><![CDATA[
+		  My name is John Doe. I work at Doe & Sons.
+		]]></bio>
+  </person>
+  <person>
+    <name salutation="Ms" id="person-2">
+		  <firstname>Hermione</firstname>
+		  <lastname>Granger</lastname>
+		</name>
+		<bio>
+			&hello; This is <emphasis>mixed content</emphasis>
+		</bio>
+  </person>
+</people>

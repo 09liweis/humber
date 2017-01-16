@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Myriad Pro";
+}
+
+h1 {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+
+::selection {
+    background: #cccccc;
+}
+
+::-moz-selection {
+    background: #cccccc;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.hidden {
+    position: absolute;
+    left: -1000000000px;
+}
+
+.clear {
+    clear: both;
+}
+
+.block {
+    padding: 40px 0;
+}
+
+.col {
+    float: left;
+}
+
+.width-20 {
+    width: 20%
+}
+
+.width-30 {
+    width: 30%;
+}
+
+.width-40 {
+    width: 40%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+img {
+    width: 100%;
+}
+
+.blue-bg {
+    background: #227daa;
+    color: #ffffff;
+}
+
+.white-bg {
+    color: #227daa;
+}
+
+.line {
+    margin: 5px 0 20px 0;
+    width: 50px;
+    height: 5px;
+}
+
+.blue-bg .line {
+    background: #ffffff;
+}
+
+.white-bg .line {
+    background: #227daa;
+}
+
+#header,
+#work,
+#education,
+#contact,
+#footer,
+#skills,
+#experiences{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navs {
+    float: right;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 10px;
+    position: relative;
+}
+
+.nav-link:before {
+    transition: all .3s ease-in-out;
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.nav-link:hover:before{
+    width: 100%;
+}
+
+.form-control {
+    position: relative;
+}
+
+.form-control label {
+    transition: all 1s linear;
+}
+
+.input-form {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #227daa;
+    width: 100%;
+    padding: 15px;
+    padding-left: 0;
+    margin-bottom: 30px;
+    color: #227daa;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#submit {
+    background: #227daa;
+    color: #ffffff;
+    display: inline-block;
+}
+
+#form-msg {
+    display: none;
+    height: 397px;
+    position: relative;
+    border: 1px solid #227daa;
+}
+
+#form-msg-wrapper {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    width: 400px;
+    text-align: center;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #ffffff;
+    font-size: 1rem;
+    font-style: italic;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #ffffff;
+    font-size: 1rem;
+    font-style: italic;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #ffffff;
+    font-size: 1rem;
+    font-style: italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #ffffff;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+@media all and (max-width:768px) {
+    .work {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .width-20,
+    .width-80 {
+        width: 100%;
+    }
+    
+    .navs {
+        float: none;
+        text-align: center;
+    }
+    
+    .nav {
+        display: block;
+        margin-bottom: 20px;
+    }
+}

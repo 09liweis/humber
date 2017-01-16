@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#ball {
+  /* position:absolute; */
+  position:relative;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background-color:red;
+  animation: ballmove 5s both 1s ;
+}
+@keyframes ballmove {
+  0% {
+    left:10%;
+  }
+  100% {
+    left:50%;
+	/* transform:scaleY(1); */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<books 
+  xmlns="http://joannakommala.com/namespaces/apps/book"
+  xmlns:authors="http://joannakommala.com/namespaces/apps/authors">
+  <book>
+    <title>A Study in Scarlet</title>
+	<!--attributes don't automatically take the same namespace-->
+	<authors:author authors:id="1"><!--the id is just an example of declaring namespaces on an attribute-->
+	  <firstname>Arthur</firstname>
+	  <middlename>Conan</middlename>
+	  <lastname>Doyle</lastname>
+	  <title>Sir</title>
+	</authors:author>
+	<authors:author>
+	  <firstname>John</firstname>
+	  <lastname>Doe</lastname>
+	</authors:author>
+  </book>
+  <book>
+    <title>Don Juan</title>
+	<authors:author>
+	  <firstname>George</firstname>
+	  <middlename>Gordon</middlename>
+	  <lastname>Byron</lastname>
+	  <title>Lord</title>
+	</authors:author>
+  </book>
+</books>
