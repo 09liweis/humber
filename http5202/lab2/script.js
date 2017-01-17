@@ -10,36 +10,36 @@ window.onload = function() {
         
         if (name == '') {
             form.name.style.borderColor = 'red';
-            return false;
         } else {
             form.name.style.borderColor = 'green';
         }
         
         if (email == '') {
             form.email.style.borderColor = 'red';
-            return false;
         } else {
             form.email.style.borderColor = 'green';
         }
         
         if (program == '') {
             form.program.style.borderColor = 'red';
-            return false;
         } else {
             form.program.style.borderColor = 'green';
         }
         
+        var genderMsg = document.getElementById('gender-msg');
         if (gender == '') {
-            var genderMsg = document.getElementById('gender-msg');
             genderMsg.style.display = 'inline';
-            return false;
         } else {
             genderMsg.style.display = 'none';
         }
-        return false;
+        
+        if (name == '' || email == '' || program == '' || gender == '') {
+            return false;
+        }
+
         if (name != '' && email != '' && program != '' && gender != '') {
             window.location = '/process.php';
+            return false;
         }
-        return false;
     };
 };

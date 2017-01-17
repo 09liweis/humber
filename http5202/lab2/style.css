@@ -35,3 +35,8 @@ input[type=text] {
     display: none;
     color: red;
 }
+
+#footer {
+    padding: 30px 0;
+    background: #cccccc;
+}
