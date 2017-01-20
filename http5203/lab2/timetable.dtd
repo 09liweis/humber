@@ -1,0 +1,15 @@
+<!DOCTYPE timetable[
+	<!ELEMENT timetable (course+) >
+	<!ELEMENT course (date, name, instructor) >
+	<!ATTLIST course 
+	    code CDATA #REQUIRED
+	    location CDATA #REQUIRED
+	    start CDATA #REQUIRED
+	    end CDATA #REQUIRED
+	>
+	<!ELEMENT date (#PCDATA) >
+	<!ELEMENT name (#PCDATA) >
+	<!ELEMENT instructor (firstname, lastname) >
+	<!ELEMENT firstname (#PCDATA) >
+	<!ELEMENT lastname (#PCDATA) >
+] >

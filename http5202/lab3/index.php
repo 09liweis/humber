@@ -45,8 +45,6 @@ if (isset($_POST['send'])) {
         $success = "Thanks for submit your info";
     }
     
-} else {
-    echo 'Please submit the form';
 }
 
 ?>
@@ -110,7 +108,6 @@ if (isset($_POST['send'])) {
         <h2><?php echo (isset($success)) ? $success : "" ?></h2>
     </div>
 </form>
-<!--<script src="script.js" type="text/javascript"></script>-->
 
 <?php
 include 'footer.php'
