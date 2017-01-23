@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<people xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="people.xsd">
+  <person position="PHP Developer">
+    <name>
+	  <first>John</first>
+	  <last>Doe</last>
+	</name>
+  </person>
+  <person position="Wizard">
+    <name>
+	  <first attr="test">Hermione</first>
+	  <last>Granger</last>
+	</name>
+	<bio>Harry Potter is a <magic>wizard</magic>.</bio>
+  </person>
+</people>

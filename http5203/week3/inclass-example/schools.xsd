@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="schools">
+    <xs:complexType>
+	  <xs:sequence>
+	    <xs:element name="school" maxOccurs="unbounded">
+		  <xs:complexType>
+		    <xs:sequence>
+			  <xs:element name="name" type="xs:string" />
+			  <xs:element name="type" type="xs:string" maxOccurs="2" />
+			  <xs:element name="family_member" maxOccurs="unbounded">
+			    <xs:complexType>
+				  <xs:simpleContent>
+				    <xs:extension base="xs:string">
+				      <xs:attribute name="role" type="roles" />
+				    </xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="url" type="xs:string" />
+			</xs:sequence>
+		  </xs:complexType>
+		</xs:element>
+	  </xs:sequence>
+	</xs:complexType>
+  </xs:element>
+  <xs:simpleType name="roles">
+    <xs:restriction base="xs:string">
+	  <xs:enumeration value="teacher" />
+	  <xs:enumeration value="parent" />
+	</xs:restriction>
+  </xs:simpleType>
+</xs:schema>	
