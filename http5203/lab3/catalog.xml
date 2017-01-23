@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<catalog>
+<catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="catalog.xsd">
 	<product sku="29043" category="audio" isFeatured="no" price="219.99">
 		<name>Sennheiser PC350 Gaming Stereo Headset</name>
 		<description>Gaming stereo headset, 10-26000Hz, 150ohm, 10-ft cord, noise-cancelling microphone.</description>

@@ -13,24 +13,26 @@
                                             <xs:complexType>
                                                 <xs:simpleContent>
                                                     <xs:extension base="xs:string">
-                                                        <xs:attribute name="attr" type="xs:string" />
+                                                        <xs:attribute name="attr" type="xs:string">
+                                                        </xs:attribute>
                                                     </xs:extension>
                                                 </xs:simpleContent>
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name="last" type="xs:string" />
+                                        <xs:element name="last" type="xs:string"></xs:element>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="bio" minOccurs="0">
                                 <xs:complexType mixed="true">
                                     <xs:choice minOccurs="0" maxOccurs="unbounded">
-                                        <xs:element name="magic" type="xs:string />
+                                        <xs:element name="magic" type="xs:string"></xs:element>
                                     </xs:choice>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
-                        <xs:attribute name="position" type="xs:string" />
+                        <xs:attribute name="position" type="xs:string">
+                        </xs:attribute>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
