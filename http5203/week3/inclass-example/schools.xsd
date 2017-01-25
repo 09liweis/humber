@@ -30,4 +30,4 @@
 	  <xs:enumeration value="parent" />
 	</xs:restriction>
   </xs:simpleType>
-</xs:schema>	
+</xs:schema>
