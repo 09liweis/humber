@@ -1,0 +1,10 @@
+<!DOCTYPE room[
+	<!ELEMENT room (message+) >
+	<!ELEMENT message (username, submissiontime, content) >
+	<!ATTLIST message 
+	    roomid CDATA #REQUIRED
+	>
+	<!ELEMENT username (#PCDATA) >
+	<!ELEMENT submissiontime (#PCDATA) >
+	<!ELEMENT content (#PCDATA) >
+] >

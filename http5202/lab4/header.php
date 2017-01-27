@@ -1,7 +1,10 @@
 <?php
 $navigations = array(
-    array('name' => 'Home', 'url' => '/home'),
-    array('name' => 'About', 'url' => '/about'),
+    array('name' => 'Home', 'url' => '#'),
+    array('name' => 'About', 'url' => '#'),
+    array('name' => 'Service', 'url' => '#'),
+    array('name' => 'Porfolio', 'url' => '#'),
+    array('name' => 'Contact', 'url' => '#')
 );
 
 function display_navigation($navigations) {
