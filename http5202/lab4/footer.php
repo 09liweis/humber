@@ -1,9 +1,12 @@
     </main>
     <footer id="footer">
         <div class="wrapper">
-            &copy; <?php echo Date('Y'); ?>
+            <span id="copyright">&copy; <?php echo Date('Y'); ?></span>
+            <nav id="nav">
+                <?=display_navigation($navigations)?>
+            </nav>
+            <div class="clear"></div>
         </div>
-        <?=display_navigation($navigations)?>
     </footer>
     </body>
 </html>

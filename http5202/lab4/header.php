@@ -27,6 +27,6 @@ function display_navigation($navigations) {
     <body>
         <header class="wrapper">
             <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" alt="logo"/>
-            <p id="contact"><?php echo display_navigation($navigations)?></p>
+            <nav id="nav"><?php echo display_navigation($navigations)?></nav>
         </header>
         <main class="wrapper">
