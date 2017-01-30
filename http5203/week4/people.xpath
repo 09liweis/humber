@@ -1,0 +1,12 @@
+/people/person/name/first
+/people/child::person/child::name/child::first
+get all <first> elements within <name> which is a child of <person>, which is a child of <people>
+
+/people/person//first[@number='4']
+/people/person//*[@number='4']
+/people/person[position()=2] get second person
+/people/person[position()=2]/name 
+
+self::
+descendant-or-self::
+following-sibling::
