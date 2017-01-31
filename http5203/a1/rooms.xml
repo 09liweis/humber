@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rooms>
+    <room id="1" publicity="public">
+        <name>XML and Web Service Group</name>
+        <types>
+            <type>Study</type>
+            <type>Coding</type>
+        </types>
+        <members>
+            <member id="1">Sam</member>
+            <member id="2">Sammy</member>
+        </members>
+    </room>
+    <room id="2" publicity="private">
+        <name>Humber School</name>
+        <types>
+            <type>Study</type>
+        </types>
+        <members>
+            <member id="1">Sam</member>
+            <member id="2">Sammy</member>
+        </members>
+    </room>
+</rooms>

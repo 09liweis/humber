@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="room">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="message" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="username" type="xs:string"></xs:element>
+                            <xs:element name="submissiontime" type="xs:string"></xs:element>
+                            <xs:element name="content" type="xs:string"></xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="roomid" type="xs:string" use="required"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

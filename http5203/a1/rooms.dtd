@@ -1,0 +1,14 @@
+<!DOCTYPE rooms[
+	<!ELEMENT rooms (room+) >
+	<!ELEMENT room (name, types, members) >
+	<!ATTLIST room 
+		id CDATA #REQUIRED
+		freeJoin (no | yes) "no"
+	>
+	<!ELEMENT name (#PCDATA) >
+	<!ELEMENT types (type+) >
+	<!ELEMENT type (#PCDATA) >
+	<!ELEMENT members (member+) >
+	<!ELEMENT member (#PCDATA) >
+	<!ATTLIST member id CDATA #REQUIRED >
+] >
