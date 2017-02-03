@@ -41,6 +41,8 @@
                                 <div class="course">
                                     <h4><xsl:value-of select="name" /></h4>
                                     <p>Location: <xsl:value-of select="location" /></p>
+                                    <p>Instructor: <xsl:value-of select="instructor" /></p>
+                                    <p>Time: <xsl:value-of select="start" /> - <xsl:value-of select="end" /></p>
                                 </div>
                             </xsl:for-each>
                         </div>
