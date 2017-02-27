@@ -3,11 +3,12 @@ window.onload = function () {
     var formHandle = document.forms[0];
     function processForm() {
         
-        var inputName = formHandle.name.value;
+        var inputName = formHandle.username.value;
         var inputPassword = formHandle.password.value;
         
         var msg = document.getElementById("msg");
-        msg.innerHTML = checkLogin(inputName, inputPassword) === true ? 'Welcome back!' : checkLogin();
+        var result = checkLogin(inputName, inputPassword);
+        msg.innerHTML = result  === true ? 'Welcome back!' : result;
 
         return false;
     }
@@ -17,6 +18,8 @@ window.onload = function () {
     }
     
     function checkLogin(inputName, inputPassword) {
+        console.log(inputName);
+        console.log(inputPassword);
         const username = 'sam';
         const password = '907134f741df0774ad1e92b67e7d2fb6';
         
@@ -30,28 +33,11 @@ window.onload = function () {
         
         if (inputName == username && md5Encrypt(inputPassword) == password) {
             return true;
-        } else {
+        } 
+        
+        if (inputName != username || md5Encrypt(inputPassword) != password) {
             return 'Invalid Username or Password.';
         }
-        
-        
-        // if (inputPassword === "" && inputName === "") {
-        //     formHandle.password.style.background = "red";
-        //     formHandle.name.style.background = "red";
-        //     return false;
-        // }
-        // if (inputName === "") {
-        //     formHandle.name.style.background = "red";
-        //     return false;
-        // }
-        // formHandle.name.style.background = "white";
-        // if (inputPassword === "") {
-        //     formHandle.password.style.background = "red";
-        //     return false;
-        // }
-        // formHandle.password.style.background = "white";
-        
-        
     }
 
     formHandle.onsubmit = processForm;

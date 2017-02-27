@@ -7,17 +7,32 @@
   </head>
   <body>
     <h1>XML DOM</h1>
-	<form action="" method="post">
+	<form method="post" action="">
 	  <div>
-	    <label for="fname">First name:</label>
-		<input type="text" id="fname" />
+	    <label for="fname">First Name:</label>
+		<input type="text" id="fname" name="fname" />
 	  </div>
 	  <div>
-	    <label for="lname">Last name:</label>
-		<input type="text" id="lname" />
+	    <label for="lname">Last Name:</label>
+		<input type="text" id="lname" name="lname" />
 	  </div>
-	  <button id="insertBtn">Add person</button>
+	  <div>
+	    <label for="position">Position:</label>
+		<input type="text" id="position" name="position" />
+	  </div>
+	  <button type="button" id="addbtn">Add new person</button>
 	</form>
-	<div id="result"></div>
+	<table>
+	  <thead>
+	    <tr>
+		  <th>First name</th>
+		  <th>Last name</th>
+		  <th>Position</th>
+		  <th>Options</th>
+		</tr>
+	  </thead>
+	  <tbody id="result">
+	  </tbody>
+	</table>
   </body>
 </html>

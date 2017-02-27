@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="orders.xsl" ?>
+<orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="orders.xsd">
+	<order>
+		<customerid>2364</customerid>
+		<status>pending</status>
+		<item instock="Y" itemid="SD93">
+			<name>Flying By Roller Skates</name>
+			<price>25.00</price>
+			<qty>25</qty>
+		</item>
+		<item instock="N" itemid="B12">
+			<name>Bounce-o Ball</name>
+			<price>.35</price>
+			<qty>150</qty>
+		</item>
+	</order>
+	<order>
+		<customerid>5268</customerid>
+		<status>complete</status>
+		<item instock="Y" itemid="Q52">
+			<name>Crash N Burn Skis</name>
+			<price>20</price>
+			<qty>10</qty>
+		</item>
+	</order>
+	<order>
+		<customerid>1028</customerid>
+		<status>complete</status>
+		<item instock="Y" itemid="BK36">
+			<name>Making Crash-Test Dummies</name>
+			<price>18.95</price>
+			<qty>1</qty>
+		</item>
+		<item instock="Y" itemid="SD96">
+			<name>Yak Winter Boots</name>
+			<price>105.00</price>
+			<qty>1</qty>
+		</item>
+	</order>
+ </orders>

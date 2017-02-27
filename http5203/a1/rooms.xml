@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<rooms>
+<rooms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="rooms.xsd">
     <room id="1" publicity="public">
         <name>XML and Web Service Group</name>
         <types>
