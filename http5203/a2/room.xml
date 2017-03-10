@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<room xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="room.xsd">
+    <message roomid="1">
+        <username>Sam</username>
+        <submissiontime>2017-01-27T12:23:02</submissiontime>
+        <content>Hello, I am Sam</content>
+    </message>
+    <message roomid="1">
+        <username>Sam</username>
+        <submissiontime>2017-01-27T16:23:02</submissiontime>
+        <content>Why no one is in this room</content>
+    </message>
+    <message roomid="1">
+        <username>Sammy</username>
+        <submissiontime>2017-01-27T18:23:02</submissiontime>
+        <content>Hello Sam, I am Sammy</content>
+    </message>
+    <message roomid="2">
+        <username>Sammy</username>
+        <submissiontime>2017-01-27T12:43:02</submissiontime>
+        <content>Hello, I am Sammy</content>
+    </message>
+    <message roomid="2">
+        <username>Sam</username>
+        <submissiontime>2017-01-27T14:23:02</submissiontime>
+        <content>Hello Sammy, I am Sam</content>
+    </message>
+<message roomid="1"><content>This is a testing message</content><username>sam</username><submissiontime>2017-03-09 14:49:12</submissiontime></message></room>
