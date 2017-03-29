@@ -1,8 +1,21 @@
 <?php
 
-$rss = simplexml_load_file("feed.rss");
-
-$items = $rss->xpath('//channel/item');
+if (file_exists("feed.rss")) {
+    $rss = simplexml_load_file("feed.rss");
+    $items = $rss->xpath('//channel/item');
+} else {
+    $xml = new DOMDocument();
+    $rss = $xml->createElement("rss");
+    $rss->setAttribute("version", "2.0");
+    $channel = $xml->createElement("channel");
+    $title = $xml->createElement("title", "Articles");
+    $description = $xml->createElement("description", "articles description");
+    $channel->appendChild($title);
+    $channel->appendChild($description);
+    $rss->appendChild($channel);
+    $xml->appendChild($rss);
+    $xml->save("feed.rss");
+}
 
 if (isset($_POST['submit'])) {
     $title = $_POST['title'];

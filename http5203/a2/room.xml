@@ -25,4 +25,4 @@
         <submissiontime>2017-01-27T14:23:02</submissiontime>
         <content>Hello Sammy, I am Sam</content>
     </message>
-<message roomid="1"><content>This is a testing message</content><username>sam</username><submissiontime>2017-03-09 14:49:12</submissiontime></message></room>
+<message roomid="1"><content>This is a testing message</content><username>sam</username><submissiontime>2017-03-09 14:49:12</submissiontime></message><message roomid="1"><content>Test message</content><username>Sam</username><submissiontime>2017-03-20 22:04:09</submissiontime></message><message roomid="2"><content>This is a testing message</content><username>Sam</username><submissiontime>2017-03-20 22:04:31</submissiontime></message></room>

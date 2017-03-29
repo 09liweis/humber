@@ -3,9 +3,5 @@
     <channel>
         <title>Articles</title>
         <description>articles description</description>
-        
-        
-        
-        
-    <item><title>名侦探柯南：纯黑的恶梦</title><description>This is description</description><author>Google</author><link>http://www.google.ca</link><pubDate>2017-03-06</pubDate></item><item><title>加速世界：无限超频</title><description>This is description</description><author>Google</author><link>http://www.google.ca</link><pubDate>2017-03-06</pubDate></item><item><title>Barrie Skiing</title><description>This is description</description><author>Google</author><link>http://www.google.ca</link><pubDate>2017-03-06</pubDate></item><item><title>STC library</title><description>This is description</description><author>Google</author><link>http://www.google.ca</link><pubDate>2017-03-06</pubDate></item><item><title>Barrie Skiing</title><description>This is description</description><author>Google</author><link>http://www.google.ca</link><pubDate>2017-03-06</pubDate></item></channel>
+    <item><title>Highcharts Demo</title><description>This is a description</description><author>Google</author><link>http://www.google.ca</link><pubDate>2017-03-13</pubDate></item></channel>
 </rss>
