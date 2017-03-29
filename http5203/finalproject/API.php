@@ -9,10 +9,4 @@ class API {
         $data = json_decode(file_get_contents(self::URL), true);
         return $data;
     }
-    
-    
 }
-
-
-// $api = new API();
-// echo json_encode($api->getData());
