@@ -3,15 +3,21 @@
 //IN THIS FILE YOU WILL SIMPLY GRAB YOUR CUSTOM ELEMENT AND ATTACH YOUR METHOD FROM YOUR MODULE TO IT.
 
 window.onload = function() {
-    var time = document.getElementById('time');
-    renderTime();
-    setInterval(renderTime(), 1000);
     
-    function renderTime() {
-        var date = new Date();
-        var hour = date.getHours();
-        var min = date.getMinutes();
-        var sec = date.getSeconds();
-        time.innerHTML = hour + ' : ' + min + ' : ' + sec;
-    }
+    var clockTmplt = document.querySelector('#tmplt__clock');
+    var clockProto = Object.create(HTMLElement.prototype);
+
+    clockProto.createdCallback = function() {
+        var root = this.attachShadow({mode: 'open'});
+        root.appendChild(document.importNode(clockTmplt.content, true));
+    };
+    
+    
+    var HumberClock = document.registerElement('humber-clock', {prototype: clockProto});
+    
+    var time = document.getElementById('time');
+    time.innerHTML = clock.renderCurrent();
+    setInterval(function(){
+        time.innerHTML = clock.renderCurrent();
+    }, 1000);
 };

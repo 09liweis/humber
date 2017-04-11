@@ -2,23 +2,27 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="import" href="A4-components-template.html">
 <title>Assignment 4</title>
-<link rel="stylesheet" type="text/css" href="A4-components.css">
 
 </head>
 <body>
 
     <h1>Web Components</h1>
     
-    <div id="humber-clock">
-        <img id="logo" src="humber-logo.png" alt="humber logo" />
-        <div id="time">
-            11 : 59 : 05
+    <template id="tmplt__clock">
+        <link rel="stylesheet" type="text/css" href="A4-components.css">
+        <div id="humber-clock">
+            <img id="logo" src="humber-logo.png" alt="humber logo" />
+            <div id="time">
+                <slot name="time"></slot>
+            </div>
+            <div id="weare">
+                WE ARE <span id="futuristic">FUTURISTIC</span>
+            </div>
         </div>
-        <div id="weare">
-            WE ARE <span id="futuristic">FUTURISTIC</span>
-        </div>
-    </div>
+    </template>
+    <humber-clock><span id="time" slot="time"></span></humber-clock>
     <h2>Four W3C Standards</h2>
     <div> 
         <ol>    
@@ -43,6 +47,7 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat elementum scelerisque. Phasellus placerat sem ac risus porttitor sagittis. Maecenas mattis eleifend pellentesque. Integer dui dui, efficitur ut dui quis, vestibulum pellentesque mi. Sed tincidunt, sem id mollis pharetra, neque sem posuere arcu, ut consequat augue justo id nisi. Maecenas leo lacus, mollis pretium eleifend vel, efficitur sed orci. Etiam libero sapien, sodales pulvinar imperdiet a, pretium vel lectus.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat elementum scelerisque. Phasellus placerat sem ac risus porttitor sagittis. Maecenas mattis eleifend pellentesque. Integer dui dui, efficitur ut dui quis, vestibulum pellentesque mi. Sed tincidunt, sem id mollis pharetra, neque sem posuere arcu, ut consequat augue justo id nisi. Maecenas leo lacus, mollis pretium eleifend vel, efficitur sed orci. Etiam libero sapien, sodales pulvinar imperdiet a, pretium vel lectus.</p>
 
+<script type="text/javascript" src="A4-components-module.js"></script>
 <script type="text/javascript" src="A4-components-logic.js"></script>
 </body>
 </html>

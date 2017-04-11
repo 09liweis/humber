@@ -1,3 +1,15 @@
 <!--NOTE: THIS FILE IS ONLY USED IF YOU SELECT OPTION 2: THE HUMBER CLOCK. IN THIS FILE YOU WILL PUT YOUR <template> INCLUDING ITS STYLING AND LOGIC TO CREATE A CUSTOM MODULE AND ATTACH IT TO THE SHADOW DOM. EXTERNAL FILES NEED TO BE DELIVERED BY A WEB SERVER SO YOU NEED TO SUBMIT A LINK TO YOUR WORKING FILES ONLINE IN YOUR SUBMISSION EMAIL. -->
 
 <!-- HUMBER CLOCK TEMPLATE  -->
+<template id="tmplt__clock">
+    <link rel="stylesheet" type="text/css" href="A4-components.css">
+    <div id="humber-clock">
+        <img id="logo" src="humber-logo.png" alt="humber logo" />
+        <div id="time">
+            <slot name="time"></slot>
+        </div>
+        <div id="weare">
+            WE ARE <span id="futuristic">FUTURISTIC</span>
+        </div>
+    </div>
+</template>

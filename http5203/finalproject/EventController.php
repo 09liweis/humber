@@ -1,10 +1,12 @@
 <?php
 
-require 'Database.php';
-require 'API.php';
-require 'Event.php';
+require 'models/Database.php';
+require 'models/API.php';
+require 'models/Event.php';
 
 $event = new Event(Database::dbConnect());
+
+header('Content-Type: application/json');
 
 if ($_GET['action'] == 'getEvents') {
     $events = $event->getEvents();
