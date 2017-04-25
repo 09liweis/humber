@@ -1,0 +1,19 @@
+label {
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.row {
+    margin-bottom: 20px;
+}
